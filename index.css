@@ -1,0 +1,207 @@
+/*Generales*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+/*Body*/
+body{
+    background-color: #1E1E1E;
+}
+
+/*Header*/
+.header{
+    height: 80px;
+    background-color: #6B7FE3;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/*Caja de texto y añadir*/
+#textInput{
+    width: 500px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    margin-left: 121px;
+    margin-top: 30px;
+    font-size: 18PX;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+#textInput::placeholder{
+    position:absolute;
+    top: 30px;
+    left: 15px;
+    
+}
+
+/*Cajas Tareas Outside*/
+.taskSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.taskContainer{
+    margin-top: 15px;
+    padding-bottom: 40px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+}
+/*Caja To Do*/
+#toDo{
+    width: 500px;
+    background-color: #9E65F0;
+    border-radius: 30px;
+    margin-left: 121px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    max-height: 460px;
+    overflow-y: scroll; 
+}
+
+#toDo::-webkit-scrollbar {
+    display: none;
+}
+
+#toDo h1{
+    color: #000000;
+    font-size: 36px;
+    padding-left: 17px;
+    padding-top: 22px;
+}
+
+/*Caja Doing*/
+#doing{
+    width: 500px;
+    background-color: #C489E7;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    max-height: 460px;
+    overflow-y: scroll;
+}
+
+#doing::-webkit-scrollbar {
+    display: none;
+}
+
+#doing h1{
+    color: #000000;
+    font-size: 36px;
+    padding-left: 17px;
+    padding-top: 22px;
+}
+
+/*Caja Done*/
+#done{
+    width: 500px;
+    background-color: #FFC5FF;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    max-height: 460px;
+    overflow-y: scroll;
+}
+
+#done::-webkit-scrollbar {
+    display: none;
+}
+
+#done h1{
+    color: #000000;
+    font-size: 36px;
+    padding-left: 17px;
+    padding-top: 22px;
+}
+
+/*Caja Tareas Inside*/
+.task{
+    background-color: aliceblue;
+    width: 90%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 8px;
+    border-radius: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    line-break: anywhere;
+}
+
+/*Botones*/
+#addButton{
+    width: 234px;
+    height: 73px;
+    background-color: #9E65F0;
+    border-radius: 20px;
+    margin-left: 146px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.task button{
+    height: min-content;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+.btnDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upBtn{
+    background-color: rgb(0, 255, 255);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.upBtn:hover{
+    background-color: rgb(0, 221, 221);
+    color: white;
+}
+
+.downBtn{
+    background-color: rgb(255, 0, 255);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.downBtn:hover{
+    background-color: rgb(202, 26, 202);
+    color: white;
+}
+
+.eraseBtn{
+    background-color: rgb(236, 59, 59);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.eraseBtn:hover{
+    background-color: rgb(187, 48, 48);
+    color: white;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="header"><h1>TASK MANAGER</h1></div>
+    </header>
+    <div class="addTask">
+        <textarea name="inTarea" id="textInput" placeholder="Escribe tu nueva tarea aqui..."></textarea>
+        <input type="button" value="Añadir" id="addButton">
+    </div>
+
+    <div class="taskSection">
+        <div id="toDo" class="taskContainer"><h1>TO DO</h1></div>
+        <div id="doing" class="taskContainer"><h1>DOING</h1></div>
+        <div id="done" class="taskContainer"><h1>DONE</h1></div>
+    </div>
+</body>
+    <script src="index.js" async defer></script>
+    <script src="model.js" async defer></script>
+</html>
